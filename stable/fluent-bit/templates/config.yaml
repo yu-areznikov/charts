@@ -163,7 +163,7 @@ data:
         HTTP_Passwd ${HTTP_PASSWORD}
 {{- end }}
 {{- end }}
-{{if eq .Values.backend.es.tls "on" }}
+{{- if eq .Values.backend.es.tls "on" }}
         tls {{ .Values.backend.es.tls }}
         tls.verify {{ .Values.backend.es.tls_verify }}
         tls.debug {{ .Values.backend.es.tls_debug }}
